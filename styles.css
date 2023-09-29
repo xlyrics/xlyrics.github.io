@@ -1,0 +1,79 @@
+/* Réinitialisation des marges et du padding par défaut pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de l'en-tête pour centrer le titre en haut de la page */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Style de la section de la liste de lecture */
+.playlist {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px; /* Largeur maximale de la liste de lecture */
+    margin: 0 auto; /* Centre la liste de lecture horizontalement */
+}
+
+/* Style du titre de la liste de lecture */
+.playlist h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style de la liste de chansons et de ses éléments */
+.song-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px; /* Hauteur maximale de la liste de chansons */
+    overflow-y: auto; /* Activation de la barre de défilement vertical si nécessaire */
+}
+
+/* Style d'un élément de la liste de chansons */
+li {
+    margin-bottom: 20px;
+}
+
+/* Style du carré contenant les détails de la chanson */
+.song-details {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Style de l'élément audio (barre de lecture) */
+.music-player {
+    width: 100%;
+}
+
+/* Style des contrôles audio */
+.music-player::-webkit-media-controls {
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Style des boutons Play/Pause */
+.music-player::-webkit-media-controls-play-button,
+.music-player::-webkit-media-controls-pause-button {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style de survol des boutons Play/Pause */
+.music-player::-webkit-media-controls-play-button:hover,
+.music-player::-webkit-media-controls-pause-button:hover {
+    color: #ff6600;
+}
