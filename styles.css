@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Réinitialisation des marges et du padding par défaut pour tous les éléments */
 * {
     margin: 0;
@@ -76,4 +78,10 @@ li {
 .music-player::-webkit-media-controls-play-button:hover,
 .music-player::-webkit-media-controls-pause-button:hover {
     color: #ff6600;
+}
+
+/* Style de la barre de réglage du volume */
+#volumeControl {
+    float: right;
+    margin-top: 20px;
 }
