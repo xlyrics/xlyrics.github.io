@@ -12,62 +12,66 @@
 
     <div class="playlist">
         <h2>Playlist</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Rechercher une musique">
+        </div>
         <ul class="song-list">
             <li>
-                <div class="song-details">
-                    <p>Angèle - Saiyan [IA] (prod. Lnkhey)</p>
-                    <audio class="music-player" controls>
-                        <source src="Angèle - Saiyan [IA] (prod. Lnkhey).mp3" type="audio/mpeg">
-                        Votre navigateur ne prend pas en charge l'élément audio.
-                    </audio>
+                <div class="song-container">
+                    <div class="song-details">
+                        <p>Angèle - Saiyan [IA] (prod. Lnkhey)</p>
+                        <audio class="music-player" controls>
+                            <source src="Angèle - Saiyan [IA] (prod. Lnkhey).mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
                 </div>
             </li>
             <li>
-                <div class="song-details">
-                    <p>Just the Two of Us (feat. Bill Withers)</p>
-                    <audio class="music-player" controls>
-                        <source src="Just the Two of Us (feat. Bill Withers).mp3" type="audio/mpeg">
-                        Votre navigateur ne prend pas en charge l'élément audio.
-                    </audio>
+                <div class="song-container">
+                    <div class="song-details">
+                        <p>Just the Two of Us (feat. Bill Withers)</p>
+                        <audio class="music-player" controls>
+                            <source src="Just the Two of Us (feat. Bill Withers).mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
                 </div>
             </li>
             <li>
-                <div class="song-details">
-                    <p>Song 2</p>
-                    <audio class="music-player" controls>
-                        <source src="song2.mp3" type="audio/mpeg">
-                        Votre navigateur ne prend pas en charge l'élément audio.
-                    </audio>
+                <div class="song-container">
+                    <div class="song-details">
+                        <p>Feu de bois - Damso </p>
+                        <audio class="music-player" controls>
+                            <source src="Feu de bois.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
                 </div>
             </li>
             <li>
-                <div class="song-details">
-                    <p>Song 2</p>
-                    <audio class="music-player" controls>
-                        <source src="song2.mp3" type="audio/mpeg">
-                        Votre navigateur ne prend pas en charge l'élément audio.
-                    </audio>
-                </div>
-            </li>
-            <li>
-                <div class="song-details">
-                    <p>Song 2</p>
-                    <audio class="music-player" controls>
-                        <source src="song2.mp3" type="audio/mpeg">
-                        Votre navigateur ne prend pas en charge l'élément audio.
-                    </audio>
+                <div class="song-container">
+                    <div class="song-details">
+                        <p>Macarena - Damso </p>
+                        <audio class="music-player" controls>
+                            <source src="Macarena.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
                 </div>
             </li>
             <!-- Ajoutez d'autres éléments de liste de chansons ici -->
         </ul>
 
-        <!-- Barre de réglage du volume -->
-        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" style="margin-top: 20px;">
-
-        <!-- Bouton pour lire automatiquement -->
-        <button id="autoPlayButton" style="margin-top: 20px;">Lire automatiquement</button>
-    </div>
-
+        <!-- Conteneur pour le bouton de lecture automatique et la barre de gestion du volume -->
+        <div class="controls-container">
+            <!-- Bouton pour lire automatiquement -->
+            <button id="autoPlayButton">Lire automatiquement</button>
+            <!-- Bouton pour sauter à la prochaine musique -->
+            <button id="skipButton">Skip</button>
+            <!-- Barre de réglage du volume -->
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+        </div>
     <!-- Intégration du fichier JavaScript -->
     <script src="script.js"></script>
 </body>
