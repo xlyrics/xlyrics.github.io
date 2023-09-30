@@ -12,6 +12,7 @@
     text-align: center;
     padding: 20px;
     background-color: #f2f2f2;
+    font-weight: bold;
 }
 
 /* Style de la section de la liste de lecture */
@@ -20,8 +21,8 @@
     color: #fff;
     padding: 20px;
     border-radius: 5px;
-    max-width: 600px; /* Largeur maximale de la liste de lecture */
-    margin: 0 auto; /* Centre la liste de lecture horizontalement */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Style du titre de la liste de lecture */
@@ -30,12 +31,45 @@
     margin-bottom: 10px;
 }
 
+/* Style de la barre de recherche */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/* Style du conteneur pour les boutons de lecture automatique et de saut */
+.controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* Marge supérieure initiale */
+}
+
+/* Style pour lorsque la musique est affichée en haut */
+.show-music-on-top .controls-container {
+    margin-bottom: 20px; /* Ajouter une marge inférieure lorsque la musique est en haut */
+}
+
+/* Style des boutons de lecture automatique et de saut */
+#autoPlayButton,
+#skipButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#autoPlayButton:hover,
+#skipButton:hover {
+    background-color: #0056b3;
+}
+
 /* Style de la liste de chansons et de ses éléments */
 .song-list {
     list-style-type: none;
     padding: 0;
-    max-height: 400px; /* Hauteur maximale de la liste de chansons */
-    overflow-y: auto; /* Activation de la barre de défilement vertical si nécessaire */
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 /* Style d'un élément de la liste de chansons */
@@ -62,26 +96,11 @@ li {
     background-color: #f2f2f2;
     padding: 5px;
     border-radius: 5px;
-}
-
-/* Style des boutons Play/Pause */
-.music-player::-webkit-media-controls-play-button,
-.music-player::-webkit-media-controls-pause-button {
-    color: #333;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Style de survol des boutons Play/Pause */
-.music-player::-webkit-media-controls-play-button:hover,
-.music-player::-webkit-media-controls-pause-button:hover {
-    color: #ff6600;
+    text-align: center;
 }
 
 /* Style de la barre de réglage du volume */
 #volumeControl {
-    float: right;
-    margin-top: 20px;
+    /* float: right; */
+    /* margin-top: 20px; */
 }
