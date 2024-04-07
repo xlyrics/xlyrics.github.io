@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+  }
+.container
+  { 
+    text-align: center;
+    position: relative;
+  }
+.button1
+   {
+    background-color: #04AA6D;
+    width: 500px;
+    height: 250px;
+   }
+.button2
+   {
+    background-color: #f44336;
+    width: 500px;
+    height: 250px;
+    opacity: 0.2;
+   }
+body
+   {
+    background-color: #fcfafc;
+   }
+img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-width:100%;
+  }
